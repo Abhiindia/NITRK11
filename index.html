@@ -1,0 +1,908 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DevSharks</title>
+    <link rel="shortcut icon" href="images/nitrk.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="module" src="js/hf.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notices_styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cookie&family=Mate+SC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+     
+
+</head>
+<!--
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#exampleModal").modal('show');
+    });
+</script>
+-->
+<script>
+    // JavaScript to toggle dropdown on click for mobile  xxxxxtime
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    dropdownToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>  
+
+<!--scriptxxxx-->
+<body>
+    <script>
+        // JavaScript to toggle dropdown on click for mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdown = document.getElementById('dropdown');
+
+        dropdownToggle.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+    </script>
+    <script>
+        // JavaScript to toggle dropdown on click for mobile
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const navbar = document.querySelector('.navbar');
+
+        dropdownToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    <!--navbar mobile-->
+    <!--<nav class="navbar">
+        <span class="navbar-brand">Your Brand</span>
+        <div class="dropdown-toggle">☰</div> <!-- Dropdown toggle for mobile -->
+       <!-- <div class="dropdown" id="dropdown">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a> -->
+            <!-- Add more links as needed -->
+        </div>
+    </nav> -->
+    <!--navbar mobile ends-->
+    <!-- navbar - ieee sb gvp -->
+    <style>
+        /* Example CSS for navbar and dropdown */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #333;
+            padding: 10px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            
+            
+        }
+        .navbar-links{
+            display: flex;
+            position: absolute;
+            top: 100%; /* Position dropdown below the navbar */
+            left: 0;
+            width: 50%;
+            background-color: #444;
+            
+        }
+        .navbar-links a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: none; /* Initially hide dropdown on larger screens */
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Media query for mobile */
+        @media (max-width: 768px) {
+            .dropdown-toggle {
+                display: block; /* Show dropdown toggle on mobile */
+            }
+            .navbar {
+                position: relative; /* Position the dropdown relative to the navbar */
+            }
+            .dropdown {
+                position: absolute;
+                top: 100%; /* Position dropdown below the navbar */
+                left: 0;
+                width: 50%;
+                background-color: #444;
+            }
+            .dropdown.active {
+                display: block; /* Show dropdown when active */
+            }
+        }
+    </style>
+    <!--<div class="container d-flex align-items-center" id="navbar"> -->
+    <div class="container-fluid navbar navbar-expand-lg sb-navbar sticky-top" id="navbar">
+        <a class="navbar-brand" href="#"><img src="images/nitrk.png" style="height: 7.5rem; width: 7.5rem;"></a>
+        <button class="navbar-toggler" type="button" data-trigger="#navbarNavDropdown">
+	    	<i class="fa fa-bars hamburger" aria-hidden = "true"></i>
+	  	</button>
+        <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+                <h5 class="py-2 text-white">DevSharks</h5>
+            </div>
+
+            <!-- my-header tag contains all the list items of navbar -->
+            <my-header></my-header>
+
+        </div>
+    </div>
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Ieee day celebrations</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">×</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  
+			  <div style="padding-bottom: 5%;">
+				  <img src="images/ieeelogo.png">
+
+				  <button type="button" class="btn primary redirect">
+					
+					<a href="ieee_day.html" class="ieee_day">	IEEE Day celebrations</a>
+					  
+				  </button>
+			  </div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			 
+			</div> 
+		  </div>
+		</div>
+	  </div> -->
+
+      <!-- IEEE-DAY 2021 -->
+    <!--
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">IEEE DAY - 17th October 2021</h5>
+              
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">×</span>
+			  </button>
+			</div>
+			<div class="modal-body" >
+			  
+			  <div style="padding-bottom: 15%; height:160px ;margin-bottom:15%; text-align: center;"  >
+				  <img class="ieee-day" src="images/ieeelogo.png" height="240px" width="400px" style="margin-top:0% ;margin: 2%;">
+                    
+				  
+			  </div>
+              <div>
+                <div>
+                    <span class="ieeeday-text">
+                        We present you: <br>
+                        <p style="font-weight: 500; margin: 0%;font-family: 'Montserrat', sans-serif!important;">UPSKILLING- Going above and beyond </p>
+                        Amazing workshops,
+                        Technical events, 
+                        Fun events
+                        and many more..... <br>
+                        Join us to celebrate our biggest joy. 🤟
+
+                    </span>
+                    
+                </div>
+                <div style="text-align: right;">
+                  <a class="ieee-day" href="ieee_day.html">Let's Participate</a>
+                </div>
+              </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+      <div class="icon-bar blink"><a href="ieee_day.html">IEEE DAY</a></div>
+	  
+    -->
+    <!-- carousel -->
+
+    <div id="homeCarousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+            <li data-target="#homeCarousel" data-slide-to="3"></li>
+            <!-- <li data-target="#homeCarousel" data-slide-to="2"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item ieee-carousel active">
+                <div class="home-carousel-image">
+                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/gallery3.png" alt="Hackathon TEAM">
+                </div>
+                <div class="carousel-caption">
+                    <div>
+                        <img src="images/nitrk.png" style= " height: 7.5rem; width: 7.5rem;;">
+                    </div>
+                    <h3>DevSharks</h3>
+                    <p>Hack the Sharks... </p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="home-carousel-image">
+                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/ieee_team2.png" alt="IEEE Event">
+                </div>
+                <!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+            </div>
+
+            <div class="carousel-item">
+                <div class="home-carousel-image">
+                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/nit17.jpg" alt="Social Event">
+                </div>
+                <!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+            </div>
+
+            <div class="carousel-item">
+                <div class="home-carousel-image">
+                    <img class="carousel-image img-responsive d-block w-100" src="images/team/home-carousel/nitrkieee1.jpeg" alt="Social Event">
+                </div>
+                <!-- <div class="carousel-caption">
+	        		<h3>Events</h3>
+	        		<p>We love the Events!</p>
+	      		</div> -->
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- updates -->
+
+    <section class="updates">
+        <div class="container container-fluid">
+            <div class="updates-heading">
+                <h1 class="text-center">Updates</h1>
+                <hr class="underline" align="center" style="width:8.5em">
+            </div>
+            <div id="updatesCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <ol class="carousel-indicators">
+                    <li data-target="#updatesCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#updatesCarousel" data-slide-to="1"></li>
+                    <li data-target="#updatesCarousel" data-slide-to="2"></li>
+                    <li data-target="#updatesCarousel" data-slide-to="3"></li>
+                    <li data-target="#updatesCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-content col-xs-10 offset-xs-1">
+                            <p align="center" style="font-size: smaller;"><b style="color: #055fad; font-weight: 750">DevSharks </b> is happy to announce the JURY MEMBERS.<br>
+                                <b><br>1. Raghava D.  - Team Lead, DevOps 
+			      				<br>2. Parul Batra - Sr. Technical Program Manager
+								<br>3. Manoj Kumar - SRE Architect Medline USA
+								<br>4. PROF.(MS.) S. Chinara - Professor IIT Patna</b>
+                                <br>5. PROF.Rahul Das - Professor IIT Patna</b>
+                                <br>
+                                <strong>- DevSharks</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content col-xs-10 offset-xs-1">
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b style="color: #474195; font-weight: 750">DevSharks</b> celebrates <b style="color: #5a9541; font-weight: 750">strong family of 5000+ participants</b> on <b>2nd Anniversery</b>.  <a href="events/2021/6pesdays...html" ></a> .<br><strong>- DevSharks</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content col-xs-10 offset-xs-1">
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i>It is official now! <b style="color: #5a9541; font-weight: 750">DevSharks</b> and <b style="color: #fc9b1c; font-weight: 750">IIT P</b> are organising HackShaks 2.0. Check the details <a href="https://hacksharks-2-0.devpost.com/">here</a>.<br><strong>- DevSharks</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content col-xs-10 offset-xs-1">
+                            <p align="center" style="font-size: small;"><i class="fa fa-quote-left" aria-hidden="true"></i><b>DevSharks </b> congratulates the students for their achievements.
+                                <br>Rank-1 : Researcherrr - Aniket Ram
+                                <br>Rank-2 : AI Mailer - Subham Kumar
+                                <br>Rank-3 : Nobelmailer - Shilpa Kamnam
+                                <br><strong>- HackSharks </strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content col-xs-10 offset-xs-1">
+                            <p align="center"><i class="fa fa-quote-left" aria-hidden="true"></i><b>DevSharks</b> is accepting applications for JUDGES . Apply Now!! <a href="https://forms.gle/WgUnY9SFYv6XhDMm7">here</a>.<br><strong>- DevSharks</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev carousel-control-icon" href="#updatesCarousel" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next carousel-control-icon" href="#updatesCarousel" role="button" data-slide="next">
+                    <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about ieee content -->
+
+    <section class="about-ieee">
+        <div class="container container-fluid">
+            <div class="about-ieee-heading">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <h1 class="text-center">About Us</h1>
+                        <hr class="underline" style="width:5em">
+                    </div>
+                </div>
+            </div>
+            <div class="about-ieee-info">
+                <div class="container container-fluid">
+                    <div class="row">
+                        <div class="col-sm-10 offset-sm-1">
+
+                            <div class="ieee container-fluid sub-section text-left">
+
+                                <h2><b>DevSharks</b></h2>
+                                <hr class="underline" align="left" style="width:3em">
+
+                                <p>DevSharks is a vibrant and pioneering student community dedicated to fostering innovation and collaboration in the realm of technology. Renowned for orchestrating a series of groundbreaking hackathons, both online and offline, our community has emerged as a beacon of creativity and problem-solving prowess.
+
+                                    <br>With an illustrious history of partnering with esteemed institutions, DevSharks has seamlessly blended the academic prowess of leading institutes with the dynamic energy of our community. These collaborations have not only elevated the quality of our events but have also amplified our impact within the tech sphere.
+                                    
+                                    <br>Our hackathons stand as a testament to our commitment, drawing in over 5000 participants from diverse corners of the globe. We take immense pride in providing a platform where budding innovators and seasoned tech enthusiasts converge, ideate, and transform ideas into tangible solutions.
+                                    <br><br>
+                                    What sets DevSharks apart is our unwavering dedication to nurturing talent, fostering a culture of continuous learning, and encouraging out-of-the-box thinking. Our community thrives on the diversity of perspectives, fostering an environment where innovation knows no bounds.
+                                    
+                                    <br>Join us in our mission to push the boundaries of technology, where every line of code, every idea, and every collaboration contributes to a greater technological landscape. DevSharks invites you to be part of an extraordinary journey, where innovation, learning, and community are at the forefront of our endeavors..</p>
+
+                                <a href="https://hacksharks-2-0.devpost.com/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+                            </div>
+
+                            <div class="ieee-india container-fluid sub-section text-right">
+
+                                <h2><b>DevSharks USA</b></h2>
+                                <hr class="underline" align="right" style="width:8.5em">
+
+                                <p>DevSharks USA, a vital wing of our global community, spearheads innovation and collaboration within the United States' tech landscape. With a legacy of organizing impactful hackathons and fostering partnerships with esteemed US institutions, we've cultivated an environment where tech enthusiasts converge to ideate and innovate. Drawing diverse talents from across the nation, our community of passionate individuals thrives on pushing the boundaries of technology. 
+                                 DevSharks USA champions continuous learning, embraces diverse perspectives, and invites all passionate about technology to join us in shaping the future of innovation in the United States.</p>
+
+                                <a href="https://hacksharks-2-0.devpost.com/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+                            </div>
+
+                            <div class="ieee-vizag container-fluid sub-section text-left">
+
+                                <h2><b>DevSharks INDIA</b></h2>
+                                <hr class="underline" align="left" style="width:16.5em">
+
+                                <p>DevSharks India stands as a dynamic force driving technological innovation within the nation's boundaries. With a rich history of hosting impactful hackathons and forging strong alliances with prestigious Indian institutions, we've curated an environment that fosters creativity and collaboration. Our community brings together diverse talents from across India, where passionate individuals converge to ideate and innovate. 
+                                    <br>DevSharks India champions a culture of continuous learning, celebrates diverse perspectives, and invites all tech enthusiasts to join us in shaping the future of innovation in India's ever-evolving tech landscape.</p>
+
+                                <a href="https://hacksharks-2-0.devpost.com/" class="btn btn-lg rounded-0" role="button" aria-pressed="true">Know More</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do IEEE -->
+
+    <section class="ieee">
+        <!-- <div class="container container-fluid content"> -->
+        <h1 class="text-center ieee-heading">What We Do at <span class="sb-name">DevSharks</span></h1>
+
+        <div class="ieee-info">
+            <div class="container-fluid">
+                <div class="row align-items-center mb-5 pb-5">
+                    <div class="col-lg-6 ml-auto mb-5 mb-lg-0 item">
+                        <img src="images/team/home-carousel/ieee_team2.png" alt="IEEE Team" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 mr-auto item">
+                        <p class="mb-4">Our student branch is passionate about community engagement of students and provides a networking opportunity to meet and learn from fellow students, as well as from faculty and professional members in the field of their interests,
+                            professions, and ideas. We have started a Women in Engineering Group (WIE-G) and are also planning to introduce a computer society (CS) chapter. <br>We, at our student branch, enhance the degree of importance of providing
+                            guidance for students and also aim to create a clear image of various available options in moulding a successful career. The executive committee members volunteering for our student branch are young budding engineers along
+                            with trained professors, and many more goal-driven people. We work together to carry out educational and focussed activities like technical events, Seminars, Workshops, Webinars, and also activities that foster social responsibilities.
+                            We are supportive and creative to novel ideas that link up with the latest technologies and are looking forward to reaching greater heights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>s
+
+    <!-- events -->
+
+    <section class="events" id="sb-events">
+        <div class="container">
+            <div class="events-heading">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <h1 class="text-center">Latest Events</h1>
+                        <hr class="underline" align="center" style="width:8.5em">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="owl-carousel owl-theme container">
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/1.png" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Brain Hacks</h3>
+                    <p class="feature_text">Student Activities</p>
+                    <!--<a href="events/2022/36_brain_hacks.html" target="_blank"><button type="button" -->
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+							class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/2.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">TECH INTELLECT</h3>
+                    <p class="feature_text">Student Activities</p>
+                <!--    <a href="events/2022/35_wie_tech_intellect.html" target="_blank"><button type="button" -->
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/3.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">MACHINE LEARNING WORKSHOP</h3>
+                    <p class="feature_text">Student Activities</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+            
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/4.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Electric Vehicle Charging Infrastructure: Wired and Wireless Technologies</h3>
+                    <p class="feature_text">Student Activities</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+		<div class="feature_item text-center">
+                    <img src="events/images/2022/5.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Get Ready For infytq</h3>
+                    <p class="feature_text">Social Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/6.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Tales Of Imagination</h3>
+                    <p class="feature_text">Social Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2021/16_lets_talk_tech/1.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Lets talk sunday</h3>
+                    <p class="feature_text">Social Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2021/10_podcast/3.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Brain Teasers</h3>
+                    <p class="feature_text">Social Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/6.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">UPSKILLING</h3>
+                    <p class="feature_text">Tech Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/7.png" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Web Wizards</h3>
+                    <p class="feature_text">Tech Event </p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/8.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Embark • Enhance • Emerge</h3>
+                    <p class="feature_text">Tech Event </p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                <div class="feature_item text-center">
+                    <img src="events/images/2022/9.jpg" style="width: 100%;" alt="">
+                    <h3 class="feature_title">Explore your Passion(Software)</h3>
+                    <p class="feature_text">Tech Event</p>
+                    <a href="https://forms.gle/nHhZxntAyCnaQwjv8" target="_blank"><button type="button"
+                        class="btn btn-outline-info">Register</button></a>
+                </div>
+                
+                 
+
+            </div>
+
+        </div>
+        
+  
+            <div class="events-2022">
+                <button class="button-os button1"><a href="./events_2022.html"><p style="margin:auto; text-align:center;" class="ml10">
+                    <span class="text-wrapper">
+                      <span class="letters">Upcoming Events</span>
+                    </span>
+                </p></a></button>
+            </div>
+    
+    </section>
+
+    <!-- events-count -->
+
+    <section class="status-count">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon text-center">
+                        <i class="fa fa-ticket fa-4x"></i>
+                    </div>
+                    <h1 class="text-center counter" data-target="18">0</h1>
+                    <p class="text-center">Events</p>
+                </div>
+                <div class="col-md-4 justify-content-center">
+                    <div class="icon text-center">
+                        <i class="fa fa-users fa-4x"></i>
+                    </div>
+                    <h1 class="text-center counter" data-target="192">0</h1>
+                    <p class="text-center">Memberships</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="icon text-center">
+                        <i class="fa fa-calendar fa-4x"></i>
+                    </div>
+                    <h1 class="text-center counter" data-target="4">0</h1>
+                    <p class="text-center">Years of Volunteering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sponsors-->
+
+
+    <!-- team -->
+
+    <!--  row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3  -->
+
+
+    <section class="team">
+        <div class="container container-fluid">
+
+            <div class="team-heading">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1 text-center">
+                        <h1>Our Sponsors</h1>
+                        <hr class="underline" align="center" style="width:8.5em">
+                        <a href="mailto:techevents.org@gmail.com">
+                            <p style="font-weight: 500; font-size: 1.25em;">Interseted in Sponsoring Us?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-info">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s5.png" class="img-fluid full-img">
+                                <!-- <div class="social">
+                                                        
+                                </div> 
+                            </div>
+                            <div class="img-text">
+                                <h4>Rao</h4>
+                                <h5>D</h5>-->
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s1.png" class="img-fluid">
+                               <!-- <div class="social">
+                                    
+                                </div> 
+                            </div>
+                            <div class="img-text">
+                                <h4>Rao</h4>
+                                <h5>D</h5>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s2.png" class="img-fluid">
+                               <!-- <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/patelcs01"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://website.nitrkl.ac.in/FProfile.aspx?e=patels"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>S</h4>
+                                <h5>CSE</h5> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s3.png" class="img-fluid">
+                               <!-- <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/patelcs01"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://website.nitrkl.ac.in/FProfile.aspx?e=patels"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>S</h4>
+                                <h5>CSE</h5> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s4.jpg" class="img-fluid">
+                               <!-- <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/patelcs01"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://website.nitrkl.ac.in/FProfile.aspx?e=patels"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>S</h4>
+                                <h5>CSE</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-team">
+                            <div class="img-area">
+                                <img src="images/s6.png" class="img-fluid">
+                               <!-- <div class="social">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/patelcs01"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://website.nitrkl.ac.in/FProfile.aspx?e=patels"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="img-text">
+                                <h4>S</h4>
+                                <h5>CSE</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+            
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+
+    <section class="testimonials">
+        <div class="container container-fluid">
+            <div class="testimonials-heading">
+                <h1 class="text-center">Testimonials</h1>
+                <hr class="underline" align="center" style="width:8.5em">
+            </div>
+            <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+                    <!-- <li data-target="#testimonialsCarousel" data-slide-to="2"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="testimonial-image">
+                                        <img src="images/A1.png" class="d-block img-responsive rounded" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="single-testimonial">
+                                        <h4>Michel John</h4>
+                                        <h5>Caltech, 2022</h5>
+                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>DevSharks is a beacon of innovation and collaboration in the tech world. As a participant from CalTech, I've been inspired by their hackathons that foster creativity and problem-solving. The events were meticulously organized, providing an unparalleled platform to unleash my ideas. The diverse community, coupled with top-notch partnerships, amplified my learning experience. DevSharks isn't just an event; it's a transformative journey that empowers aspiring tech enthusiasts like me to make a real impact. Proud to be a part of a community that reshapes the future of tech, one hackathon at a time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="testimonial-image">
+                                        <img src="images/A2.png" class="d-block img-responsive rounded" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="single-testimonial">
+                                        <h4>Deeprabha Aggarwal</h4>
+                                        <h5>IIT Delhi</h5>
+                                        <p><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>DevSharks embodies the essence of innovation and collaboration. As a participant from IIT Delhi, my journey with DevSharks has been nothing short of transformative. Their hackathons provide a platform where creativity meets real-world problem-solving. The collaborations with leading institutes have been instrumental in broadening my perspective and refining my skills. Being part of DevSharks isn't just about competing; it's about embracing a culture that encourages learning and pushing boundaries. It's an honor to contribute alongside passionate individuals in shaping the tech landscape, making each hackathon an unforgettable experience.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="page-footer" style="background-image: url('images/wie/section_bg02.png');" id="contact-info">
+
+        <div class="container footer-heading">
+           <div class="row" class="justify-content-center">
+
+
+                <div class="col-sm-10 offset-sm-1">
+                    <h1 class="text-center">Contact Us</h1>
+                    <hr class="underline" align="center" style="width:8.5em">
+                </div>
+            </div>
+        </div>
+
+       <!--   my-footer tag contains the footer-info -->
+        <my-footer></my-footer>
+
+    </section>
+
+    <!-- <div id="insprio" style="display: block; position: fixed; right:30px; bottom:40px; border: 1px solid #000; ">
+        <a title="Insprio Page" href="evento/index.html"><img src="events/images/2020/ieeeday/insprio.png" style="height: 5rem; width: 10rem; background-color: #fff; padding: 5px;"></a>
+    </div> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            stagePadding: 30,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+
+        $(window).scroll(function(){ 
+    if($(window).scrollTop() >= 250 ){ 
+       $( ".blink" ).css( "display", "block","background-color .3s", "opacity .5s"," visibility .5s" ); 
+    } else { 
+
+    $( ".blink" ).css( "display", "none" ); 
+    } 
+    });
+
+
+    //events 2022 button styles
+    var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 300,
+    delay: (el, i) => 60 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 500
+  });
+
+    </script>
+
+</body>
+
+</html>
