@@ -67,6 +67,7 @@ class MyFooter extends HTMLElement {
 						DevSharks  <br>
 						
 						Email : techevents.org@gmail.com <br>
+                                                KD Colony, Sector 12 R K Puram (Main), South West Delhi, Delhi, 110066 <br>
 						</address>
 					</div>
 					<div class="col-xs-12 col-md-4">
