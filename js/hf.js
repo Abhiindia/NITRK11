@@ -24,9 +24,9 @@ class MyHeader extends HTMLElement {
 	          		Upcomming Hackathons
 	        		</a>
 	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
-	          			<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">Hacksharks 2.0</a>
-						<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">Wolf HACK</a>
-						<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">The Code Jam</a>
+	          			<a class="dropdown-item" href="events_2022.html">Hacksharks 2.0</a>
+						<a class="dropdown-item" href="events_2022.html">Wolf HACK</a>
+						<a class="dropdown-item" href="events_2022.html">The Code Jam</a>
 	        		</div>
 	      		</li>
 	      		<li class="nav-item dropdown">
