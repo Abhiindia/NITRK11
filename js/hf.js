@@ -24,9 +24,9 @@ class MyHeader extends HTMLElement {
 	          		Upcomming Hackathons
 	        		</a>
 	        		<div class="dropdown-menu justify-content-start" aria-labelledby="navbarDropdownChaptersLink">
-	          			<a class="dropdown-item" href="events_2022.html">Hacksharks 2.0</a>
-						<a class="dropdown-item" href="events_2022.html">Wolf HACK</a>
-						<a class="dropdown-item" href="events_2022.html">The Code Jam</a>
+	          			<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">Hacksharks 2.0</a>
+						<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">Wolf HACK</a>
+						<a class="dropdown-item" href="https://hacksharks-2-0.devpost.com/">The Code Jam</a>
 	        		</div>
 	      		</li>
 	      		<li class="nav-item dropdown">
@@ -66,8 +66,11 @@ class MyFooter extends HTMLElement {
 						<address>
 						DevSharks  <br>
 						
-						Email : techevents.org@gmail.com <br>
-                                                KD Colony, Sector 12 R K Puram (Main), South West Delhi, Delhi, 110066 <br>
+						Email : contact@devsharks.xyz <br>
+						Address: Near Hanuman Mandir, Sector 12 R K Puram, West Delhi, Delhi, 110066
+						<li><a href="privacypolicy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms & Conditions</a></li>
+						<li><a href="refund.html">Refund Policy</a></li>
 						</address>
 					</div>
 					<div class="col-xs-12 col-md-4">
