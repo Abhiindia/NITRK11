@@ -66,7 +66,7 @@ class MyFooter extends HTMLElement {
 						<address>
 						DevSharks  <br>
 						
-						Email : contact@devsharks.xyz <br>
+			
 						Address: Near Hanuman Mandir, Sector 12 R K Puram, West Delhi, Delhi, 110066
 						<li><a href="privacypolicy.html">Privacy Policy</a></li>
 						<li><a href="terms.html">Terms & Conditions</a></li>
@@ -80,9 +80,8 @@ class MyFooter extends HTMLElement {
 						</div>
 						<div>
 						    <p>for any queries, appeal, code of conduct voilations write us on:</p>
-							<p>E-Mail: <span><a href="mailto:techevents.org@gmail.com? subject = ">techevents.org@gmail.com</a></span></p>
-							<p>Mobile: <a href="Phone : "></a> (Toll Free)</p>
-							<p>Mobile: <a href="Phone : "></a> (Counselor)</p>
+							<p>E-Mail: <span><a href="mailto:contact@devsharks.org? subject = ">contact@devsharks.xyz</a></span></p>
+							
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
